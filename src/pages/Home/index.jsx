@@ -26,7 +26,7 @@ export default function Home() {
   useEffect(() => {
     const getCoord = async () => {
       const result = await fetch(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${
+        `https://api.openweathermap.org/geo/1.0/direct?q=${
           city ? city : "Jakarta"
         }&limit=5&appid=${process.env.REACT_APP_API_KEY}`
       );
